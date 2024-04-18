@@ -4,7 +4,7 @@ import UserUseCases from '../../application/useCases/UserUseCases';
 import UserRepository from '../repositories/UserRepository';
 
 const userRouter = Router();
-const userRepository = new UserRepository(); // Suponiendo que ya has implementado UserRepository
+const userRepository = new UserRepository();
 const userUseCases = new UserUseCases(userRepository);
 const userController = new UserController(userUseCases);
 
